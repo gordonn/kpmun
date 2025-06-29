@@ -277,7 +277,6 @@ h4 {
 }
 
 .footer {
-
   height: 160px;
   background-color: #1E1E1E;
   text-align: center;
@@ -466,9 +465,18 @@ tr:nth-child(even) {
     width: 400px;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
   }
 
   .committee-buttons button {
     width: 200px;
+  }
+}
+
+@media(min-width: 1250px) {
+  .two-collumns .secretariat .shortcuts {
+    display: grid;
+    grid-template-columns: 380px 380px;
+    justify-content: center;
   }
 }
