@@ -1,0 +1,474 @@
+* {
+  /*Remove default styling*/
+  margin: 0;
+}
+
+.nav-bar {
+  background-color: white;
+
+  /*Always stay fixed at the top of the screen:*/
+  position: absolute;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+/*KMUN logo in header section*/
+.logo {
+  width: 100px;
+  height: auto;
+  margin: auto;
+  margin-top: 15px;
+
+  /*Center Image*/
+  display: block;
+}
+
+a {
+  /*Remove Styling From Links*/
+  text-decoration: none;
+
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.home-link {
+  padding: 0;
+}
+
+.nav-bar a {
+  transition: 0.45s;
+}
+
+.nav-bar a:hover {
+  color: #CCCCCC;
+}
+
+.nav-links {
+  /*Center Nav Links*/
+  text-align: center;
+
+  margin-top: 15px;
+  background-color: #1e1e1e;
+  padding: 10px;
+}
+
+/*Nav Bar for Tablet Screens*/
+@media(min-width: 750px) {
+  .nav-bar {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .nav-links {
+    height: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .logo {
+    margin-left: 20px;
+    margin-top: 0px;
+  }
+
+  .home-link {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
+
+.background {
+  /*Background Image Properties:*/
+  background-image: url(../img/vancouver.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  text-align: center;
+  height: 700px;
+  width: 100%;
+  margin-top: 150px;
+
+  /*Center children divs horizontally and vertically*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background p {
+  color: white;
+  font-size: 18px;
+}
+
+.background-content {
+  width: 85%;
+  padding-bottom: 20px;
+}
+
+h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+}
+
+.background-content hr {
+  border: none;
+  height: 2px;
+  background-color: white;
+  width: 100%;
+
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*Background Section for Tablet Screens*/
+@media(min-width: 750px) {
+  .background-content hr {
+    width: 550px;
+  }
+
+  .background {
+    margin-top: 100px;
+  }
+}
+
+.letter {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 80px;
+}
+
+h2 {
+  color: #424242;
+  font-weight: 100;
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+
+p {
+  font-size: 18px;
+  color: #424242;
+  line-height: 1.5;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  width: 90%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background-color: #CCCCCC;
+}
+
+/*Letter Section for Tablet Screens*/
+@media(min-width: 750px) {
+  .letter {
+    width: 550px;
+  }
+
+  hr {
+    width: 550px;
+  }
+}
+
+.shortcuts {
+  width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 120px;
+}
+
+.shortcut img {
+  width: 320px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+
+h3 {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: #424242;
+  font-weight: 100;
+  font-size: 22px;
+}
+
+.shortcut {
+  margin-bottom: 60px;
+}
+
+.shortcut a {
+  padding: 0;
+}
+
+.shortcut p {
+  margin-bottom: 20px;
+}
+
+button {
+  width: 180px;
+  height: 60px;
+  border-radius: 0;
+  background-color: #840029;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.45s;
+}
+
+button:hover {
+  background-color: #1E1E1E;
+}
+
+/*Shortcuts Section for Tablet Screens*/
+@media(min-width: 750px) {
+  .shortcuts {
+    display: grid;
+    grid-template-columns: 380px 380px;
+    justify-content: center;
+  }
+
+  .shortcut p,
+  .shortcut h3,
+  .shortcut button {
+    margin-left: 40px;
+  }
+}
+
+@media(min-width: 1250px) {
+  .shortcuts {
+    display: grid;
+    grid-template-columns: 380px 380px 380px;
+    justify-content: center;
+  }
+
+  .shortcut p,
+  .shortcut h3,
+  .shortcut button {
+    margin-left: 40px;
+  }
+}
+
+.sub-footer {
+  height: 80px;
+  background-color: #424242;
+  text-align: center;
+}
+
+h4 {
+  font-weight: 100;
+  font-size: 22px;
+  color: white;
+
+  /*Center text*/
+  line-height: 80px;
+}
+
+.footer {
+
+  height: 160px;
+  background-color: #1E1E1E;
+  text-align: center;
+}
+
+.footer img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+}
+
+.footer p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.header {
+  margin-top: 205px;
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header hr {
+  width: 200px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.header h1 {
+  color: #424242;
+  font-weight: 100;
+  font-size: 26px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.header p {
+  margin-top: 40px;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section {
+  background-image: url(../img/background.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 350px;
+  width: 90%;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.section p {
+  color: white;
+}
+
+.sections a {
+  padding: 0;
+}
+
+.sections {
+  margin-bottom: 120px;
+}
+
+@media(min-width: 750px) {
+  .header p {
+    width: 550px;
+  }
+
+  .section {
+    width: 700px;
+  }
+}
+
+.secretariat img {
+  width: 320px;
+  height: 500px;
+  border-radius: 0px;
+}
+
+.venue {
+  text-align: center;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.venue h1 {
+  color: #424242;
+  font-weight: 100;
+  font-size: 26px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  border: 1px solid #DDD;
+  font-family: 'Times New Roman', Times, serif;
+  color: #424242;
+}
+
+th,
+td {
+  padding: 20px;
+  text-align: left;
+  border-bottom: 1px solid #DDD;
+  font-size: 18px;
+}
+
+tr:nth-child(even) {
+  background-color: #84002950;
+}
+
+@media (min-width: 750px) {
+  table {
+    width: 700px;
+  }
+}
+
+.speakers h1 {
+  color: #424242;
+  font-weight: 100;
+  font-size: 26px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 60px;
+}
+
+.speakers {
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.committee-1 .background {
+  background-image: url(../img/background.webp);
+}
+
+.committee-2 .background {
+  background-image: url(../img/background.webp);
+}
+
+.committee .header {
+  margin-top: 80px;
+}
+
+.committee .letter {
+  padding-top: 40px;
+}
+
+.committee-buttons {
+  text-align: center;
+}
+
+.committee-buttons button {
+  width: 300px;
+}
+
+@media(min-width: 750px) {
+  .committee-buttons {
+    display: flex;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .committee-buttons button {
+    width: 200px;
+  }
+}
