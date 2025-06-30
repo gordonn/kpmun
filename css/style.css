@@ -188,14 +188,14 @@ hr {
 }
 
 .shortcuts {
-  width: 320px;
+  width: 280px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 120px;
 }
 
 .shortcut img {
-  width: 320px;
+  width: 280px;
   height: auto;
   border-radius: 10px;
   display: block;
@@ -245,12 +245,17 @@ button:hover {
     grid-template-columns: 380px 380px;
     justify-content: center;
     margin-bottom: 60px;
+    width: 320px;
   }
 
   .shortcut p,
   .shortcut h3,
   .shortcut button {
     margin-left: 40px;
+  }
+
+  .shortcut img {
+    width: 320px;
   }
 }
 
@@ -390,8 +395,6 @@ h4 {
 }
 
 .secretariat img {
-  width: 320px;
-  height: 500px;
   border-radius: 0px;
 }
 
