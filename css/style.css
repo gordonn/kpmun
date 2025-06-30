@@ -269,7 +269,8 @@ button:hover {
 }
 
 .sub-footer {
-  height: 80px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #424242;
   text-align: center;
 }
@@ -280,14 +281,14 @@ h4 {
   color: white;
 
   /*Center text*/
-  line-height: 80px;
   width: 90%;
   margin-right: auto;
   margin-left: auto;
 }
 
 .footer {
-  height: 160px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #1E1E1E;
   text-align: center;
 }
@@ -295,7 +296,6 @@ h4 {
 .footer img {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 35px;
 }
 
 .footer p {
