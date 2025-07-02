@@ -506,3 +506,94 @@ tr:nth-child(even) {
     justify-content: center;
   }
 }
+
+.registration {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+label {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  color: #424242;
+}
+
+input {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 38px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  color: #424242;
+
+  box-sizing: border-box;
+}
+
+select {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  color: #424242;
+  height: 38px;
+  width: 50%;
+}
+
+
+.birthday select {
+  width: 30%;
+}
+
+.submit-button {
+  width: 180px;
+  height: 60px;
+  border-radius: 0;
+  background-color: #840029;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.45s;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 17px;
+  width: 200px
+}
+
+.submit-button:hover {
+  background-color: #1E1E1E;
+}
+
+.submit {
+  text-align: center;
+}
+
+form hr {
+  margin-top: 45px;
+}
+
+@media(min-width: 750px) {
+  .registration {
+    width: 550px;
+  }
+
+  .name {
+    display: grid;
+    grid-template-columns: 270px 270px;
+    gap: 10px;
+  }
+
+  .choice {
+    display: grid;
+    grid-template-columns: 270px 270px;
+    gap: 10px;
+  }
+
+  .choice select {
+    width: 100%;
+  }
+}
