@@ -54,12 +54,11 @@
 
       <label for="phone">Phone Number:</label>
       <br>
-      <input type="text" id="phone" name="phone" size="25" maxlength="25">
-
+      <input type="tel" id="phone" name="phone" size="25" maxlength="25" pattern="[0-9+\-\s()]{7,25}"
+        placeholder="(123) 456-7890"><br><br>
       <label for="email">Email Address:</label>
       <br>
-      <input type="text" id="email" name="email" size="25" maxlength="25">
-
+      <input type="email" id="email" name="email" size="25" maxlength="254" placeholder="name@example.com">
       <div class="birthday">
         <label for="date">Date of Birth:</label>
         <br>
