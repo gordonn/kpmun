@@ -5,25 +5,28 @@
 
 .nav-bar {
   background-color: white;
+  width: 100%;
 
   /*Always stay fixed at the top of the screen:*/
-  position: absolute;
-  z-index: 99;
   position: fixed;
-  width: 100%;
   left: 0;
   top: 0;
+
+  /*Determines stacking order (what appears on top of what):*/
+  z-index: 99;
 }
 
-/*KMUN logo in header section*/
+/*KPMUN logo in header section*/
 .logo {
   width: 100px;
   height: auto;
-  margin: auto;
-  margin-top: 15px;
 
-  /*Center Image*/
+  /*Center logo Horizontally*/
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 15px;
 }
 
 a {
@@ -34,14 +37,20 @@ a {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 600;
   font-size: 12px;
+
+  /*Set top/bottom margins to 0 and left/right margins to auto*/
   margin: 0 auto;
+
   padding-left: 5px;
   padding-right: 5px;
 }
 
+/*Set KPMUN icon as link to homepage*/
 .home-link {
+  /*Remove default padding for links*/
   padding: 0;
 }
+
 
 .nav-bar a {
   transition: 0.45s;
@@ -60,9 +69,10 @@ a {
   padding: 10px;
 }
 
-/*Nav Bar for Tablet Screens*/
+/*Nav Bar for wider screens */
 @media(min-width: 750px) {
   .nav-bar {
+    /*Arrange navbar elements horizontally*/
     display: flex;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -106,7 +116,9 @@ a {
   /*Center children divs horizontally and vertically*/
   display: flex;
   justify-content: center;
+  /*Horizontally centers flex items*/
   align-items: center;
+  /*Vertically centers flex items*/
 }
 
 .background p {
@@ -135,7 +147,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-/*Background Section for Tablet Screens*/
+/*Background section for wider screens*/
 @media(min-width: 750px) {
   .background-content hr {
     width: 700px;
@@ -176,7 +188,7 @@ hr {
   background-color: #CCCCCC;
 }
 
-/*Letter Section for Tablet Screens*/
+/*Letter section for wider screens*/
 @media(min-width: 750px) {
   .letter {
     width: 550px;
@@ -198,6 +210,8 @@ hr {
   width: 280px;
   height: auto;
   border-radius: 10px;
+
+  /*Horizontally center image in its container*/
   display: block;
   margin: auto;
 }
@@ -238,9 +252,10 @@ button:hover {
   background-color: #1E1E1E;
 }
 
-/*Shortcuts Section for Tablet Screens*/
+/*Shortcuts sections for wider screens*/
 @media(min-width: 750px) {
   .shortcuts {
+    /*Display the shortcut sections in grids*/
     display: grid;
     grid-template-columns: 380px 380px;
     justify-content: center;
@@ -261,15 +276,7 @@ button:hover {
 
 @media(min-width: 1250px) {
   .shortcuts {
-    display: grid;
     grid-template-columns: 380px 380px 380px;
-    justify-content: center;
-  }
-
-  .shortcut p,
-  .shortcut h3,
-  .shortcut button {
-    margin-left: 40px;
   }
 }
 
@@ -383,7 +390,6 @@ h4 {
 }
 
 @media(min-width: 750px) {
-
   .header {
     margin-top: 200px;
   }
@@ -499,7 +505,7 @@ tr:nth-child(even) {
   }
 }
 
-@media(min-width: 1250px) {
+@media(min-width: 750px) {
   .two-collumns .secretariat .shortcuts {
     display: grid;
     grid-template-columns: 380px 380px;
@@ -533,6 +539,7 @@ input {
   padding-left: 6px;
   padding-right: 6px;
 
+  /*Prevent unexpected sizing overflow*/
   box-sizing: border-box;
 }
 
@@ -578,6 +585,7 @@ form hr {
   margin-top: 45px;
 }
 
+/*Slightly modify form layout for wider screens*/
 @media(min-width: 750px) {
   .registration {
     width: 550px;
