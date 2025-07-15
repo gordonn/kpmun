@@ -1,147 +1,185 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registration &mdash; KPMUN</title>
+    <link rel="icon" type="image/x-icon" href="img/kmun.svg" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Registration &mdash; KPMUN</title>
-  <link rel="icon" type="image/x-icon" href="img/kmun.svg">
-  <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body>
-
-  <div class="nav-bar">
-    <a href="index.html" class="home-link">
-      <img src="img/kmun.svg" alt="Kwantlen Model United Nations Logo" class="logo">
-    </a>
-    <div class="nav-links">
-      <a href="committees.html">Committees</a>
-      <a href="about.html">About</a>
-      <a href="resources.html">Resources</a>
-      <a href="registration.html">Registration</a>
+  <body>
+    <div class="nav-bar">
+      <a href="index.html" class="home-link">
+        <img
+          src="img/kmun.svg"
+          alt="Kwantlen Model United Nations Logo"
+          class="logo"
+        />
+      </a>
+      <div class="nav-links">
+        <a href="committees.html">Committees</a>
+        <a href="about.html">About</a>
+        <a href="resources.html">Resources</a>
+        <a href="registration.html">Registration</a>
+      </div>
     </div>
-  </div>
 
-  <div class="header">
-    <hr>
-    <h1>REGISTRATION</h1>
-    <hr>
-  </div>
+    <div class="header">
+      <hr />
+      <h1>REGISTRATION</h1>
+      <hr />
+    </div>
 
-  <br>
-  <br>
+    <br />
+    <br />
 
-  <div class="registration">
+    <div class="registration">
+      <form>
+        <div class="name">
+          <div>
+            <label for="firstName">First Name:</label>
+            <br />
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              size="25"
+              maxlength="25"
+            />
+          </div>
 
-    <form>
-
-      <div class="name">
-
-        <div>
-          <label for="firstName">First Name:</label>
-          <br>
-          <input type="text" id="firstName" name="firstName" size="25" maxlength="25">
+          <div>
+            <label for="lastName">Last Name:</label>
+            <br />
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              size="25"
+              maxlength="25"
+            />
+          </div>
         </div>
 
-        <div>
-          <label for="lastName">Last Name:</label>
-          <br>
-          <input type="text" id="lastName" name="lastName" size="25" maxlength="25">
-        </div>
+        <label for="phone">Phone Number:</label>
+        <br />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          size="25"
+          maxlength="25"
+          pattern="[0-9+\-\s()]{7,25}"
+          placeholder="(123) 456-7890"
+        />
+        <br />
+        <label for="email">Email Address:</label>
+        <br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          size="25"
+          maxlength="254"
+          placeholder="name@example.com"
+        />
+        <div class="birthday">
+          <label for="date">Date of Birth:</label>
+          <br />
+          <select name="date" id="date">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
 
-      </div>
+          <select name="month" id="month">
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+          </select>
 
-      <label for="phone">Phone Number:</label>
-      <br>
-      <input type="tel" id="phone" name="phone" size="25" maxlength="25" pattern="[0-9+\-\s()]{7,25}"
-        placeholder="(123) 456-7890">
-      <br>
-      <label for="email">Email Address:</label>
-      <br>
-      <input type="email" id="email" name="email" size="25" maxlength="254" placeholder="name@example.com">
-      <div class="birthday">
-        <label for="date">Date of Birth:</label>
-        <br>
-        <select name="date" id="date">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
-
-        <select name="month" id="month">
-          <option value="1">January</option>
-          <option value="2">February</option>
-          <option value="3">March</option>
-          <option value="4">April</option>
-        </select>
-
-        <select name="year" id="year">
-          <option value="1">2006</option>
-          <option value="2">2007</option>
-          <option value="3">2008</option>
-          <option value="4">2009</option>
-        </select>
-      </div>
-
-      <hr>
-
-      <div class="choice">
-        <div>
-          <label for="committee">Committee Choice:</label>
-          <br>
-          <select name="committee" id="committee">
-            <option value="1">committee 1</option>
-            <option value="2">committee 2</option>
-            <option value="3">committee 3</option>
-            <option value="4">committee 4</option>
+          <select name="year" id="year">
+            <option value="1">2006</option>
+            <option value="2">2007</option>
+            <option value="3">2008</option>
+            <option value="4">2009</option>
           </select>
         </div>
 
-        <div>
-          <label for="country">Country Choice:</label>
-          <br>
-          <input type="text" id="country" name="country" size="25" maxlength="25">
+        <hr />
+
+        <div class="choice">
+          <div>
+            <label for="committee">Committee Choice:</label>
+            <br />
+            <select name="committee" id="committee">
+              <option value="1">committee 1</option>
+              <option value="2">committee 2</option>
+              <option value="3">committee 3</option>
+              <option value="4">committee 4</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="country">Country Choice:</label>
+            <br />
+            <input
+              type="text"
+              id="country"
+              name="country"
+              size="25"
+              maxlength="25"
+            />
+          </div>
         </div>
-      </div>
 
-      <br>
+        <br />
 
-      <div class="choice">
-        <div>
-          <label for="committee2">Second Committee Choice:</label>
-          <br>
-          <select name="committee2" id="committee2">
-            <option value="1">committee 1</option>
-            <option value="2">committee 2</option>
-            <option value="3">committee 3</option>
-            <option value="4">committee 4</option>
-          </select>
+        <div class="choice">
+          <div>
+            <label for="committee2">Second Committee Choice:</label>
+            <br />
+            <select name="committee2" id="committee2">
+              <option value="1">committee 1</option>
+              <option value="2">committee 2</option>
+              <option value="3">committee 3</option>
+              <option value="4">committee 4</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="country2">Second Country Choice:</label>
+            <br />
+            <input
+              type="text"
+              id="country2"
+              name="country2"
+              size="25"
+              maxlength="25"
+            />
+          </div>
         </div>
 
-        <div>
-          <label for="country2">Second Country Choice:</label>
-          <br>
-          <input type="text" id="country2" name="country2" size="25" maxlength="25">
+        <hr />
+
+        <div class="submit">
+          <input type="submit" value="Submit" class="submit-button" />
         </div>
-      </div>
+      </form>
+    </div>
 
-      <hr>
-
-      <div class="submit">
-        <input type="submit" value="Submit" class="submit-button">
-      </div>
-    </form>
-  </div>
-
-  <div class="sub-footer">
-    <h4>Facilitating Global Citizenship</h4>
-  </div>
-  <div class="footer">
-    <a href=""><img src="img/instagram.svg" alt="instagram"></a>
-    <p>© Kwantlen Polytechnic Model United Nations 2025. Website by...</p>
-  </div>
-</body>
-
+    <div class="sub-footer">
+      <h4>Facilitating Global Citizenship</h4>
+    </div>
+    <div class="footer">
+      <a href=""><img src="img/instagram.svg" alt="instagram" /></a>
+      <p>
+        © Kwantlen Polytechnic Model United Nations 2025. Website by Abbas
+        Javed, Gordon Li & Moritz Kostka
+      </p>
+    </div>
+  </body>
 </html>
