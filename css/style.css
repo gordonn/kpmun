@@ -306,7 +306,7 @@ button {
 }
 
 button:hover {
-  background-color: #510019;
+  background-color: #840029;
 }
 
 /*Shortcuts sections for wider screens*/
@@ -328,6 +328,10 @@ button:hover {
 
   .shortcut img {
     width: 320px;
+  }
+
+  button:hover {
+    background-color: #510019;
   }
 }
 
@@ -649,7 +653,7 @@ select {
 }
 
 .submit-button:hover {
-  background-color: #510019;
+  background-color: #840029;
 }
 
 .submit {
@@ -680,5 +684,9 @@ form hr {
 
   .choice select {
     width: 100%;
+  }
+
+  .submit-button:hover {
+    background-color: #510019;
   }
 }
