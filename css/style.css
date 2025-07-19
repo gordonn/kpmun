@@ -123,7 +123,7 @@ a {
 
 .background p {
   color: white;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .background-content {
@@ -370,6 +370,14 @@ h4 {
   align-items: center;
 }
 
+.section1 .section {
+  background-image: url(../img/WHO.webp);
+}
+
+.section2 .section {
+  background-image: url(../img/NATO.webp);
+}
+
 .section h1 {
   font-size: 24px;
   margin-bottom: 10px;
@@ -469,11 +477,11 @@ tr:nth-child(even) {
 }
 
 .committee-1 .background {
-  background-image: url(../img/background.webp);
+  background-image: url(../img/WHO.webp);
 }
 
 .committee-2 .background {
-  background-image: url(../img/background.webp);
+  background-image: url(../img/NATO.webp);
 }
 
 .committee .header {
