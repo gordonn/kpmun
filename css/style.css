@@ -433,11 +433,11 @@ h4 {
 }
 
 .section1 .section {
-  background-image: url(../img/WHO.webp);
+  background-image: url(../img/background.webp);
 }
 
 .section2 .section {
-  background-image: url(../img/NATO.webp);
+  background-image: url(../img/background.webp);
 }
 
 .section h1 {
@@ -542,11 +542,11 @@ tr:nth-child(even) {
 }
 
 .committee-1 .background {
-  background-image: url(../img/WHO.webp);
+  background-image: url(../img/background.webp);
 }
 
 .committee-2 .background {
-  background-image: url(../img/NATO.webp);
+  background-image: url(../img/background.webp);
 }
 
 .committee .header {
