@@ -548,7 +548,7 @@ tr:nth-child(even) {
 .committees .background {
   background-image: none;
   background-color: var(--nav-color);
-  height: 200px;
+  height: 240px;
 }
 
 .committee .header {
