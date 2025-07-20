@@ -541,20 +541,6 @@ tr:nth-child(even) {
   margin-right: auto;
 }
 
-.committees .background .background-content {
-  padding-top: 20px;
-}
-
-.committees .background {
-  background-image: none;
-  background-color: var(--nav-color);
-  height: 240px;
-}
-
-.committee .header {
-  margin-top: 80px;
-}
-
 .committee .letter {
   padding-top: 40px;
 }
