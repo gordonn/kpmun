@@ -515,7 +515,7 @@ td {
   font-size: 18px;
 }
 
-/*Make every second row of table a different color*/
+/*Make every other row of table a alternating color*/
 tr:nth-child(even) {
   background-color: #84002950;
 }
@@ -539,10 +539,6 @@ tr:nth-child(even) {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-}
-
-.committee .letter {
-  padding-top: 40px;
 }
 
 .committee-buttons {
