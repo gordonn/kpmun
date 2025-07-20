@@ -541,12 +541,14 @@ tr:nth-child(even) {
   margin-right: auto;
 }
 
-.committee-1 .background {
-  background-image: url(../img/background.webp);
+.committees .background .background-content {
+  padding-top: 20px;
 }
 
-.committee-2 .background {
-  background-image: url(../img/background.webp);
+.committees .background {
+  background-image: none;
+  background-color: var(--nav-color);
+  height: 200px;
 }
 
 .committee .header {
