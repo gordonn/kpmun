@@ -1,9 +1,11 @@
 // Saves the theme setting to the browsers local storage (either "active" or "null") and stores it in a variable
 let darkmode = localStorage.getItem("darkmode");
+const icon = document.getElementById("toggle");
 
 // When darkmode is enabled, add the darkmode class to the <body>
 function enableDarkmode() {
   document.body.classList.add("darkmode");
+  icon.src = 'img/light-mode.svg';
 
   // Save preference in local storage
   localStorage.setItem("darkmode", "active");
@@ -12,6 +14,7 @@ function enableDarkmode() {
 // Remove darkmode class from <body>
 function disableDarkmode() {
   document.body.classList.remove("darkmode");
+  icon.src = 'img/dark-mode.svg';
 
   // Clear the saved preference in local storage
   localStorage.setItem("darkmode", null);

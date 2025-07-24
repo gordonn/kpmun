@@ -44,21 +44,6 @@ body {
   align-items: center;
 }
 
-/*Initially hide the last svg and only show the first*/
-#theme-switch svg:last-child {
-  display: none;
-}
-
-/*Hide the first svg while in dark mode*/
-.darkmode #theme-switch svg:first-child {
-  display: none;
-}
-
-/*Show the last svg while in dark mode*/
-.darkmode #theme-switch svg:last-child {
-  display: block;
-}
-
 .nav-bar {
   background-color: var(--base-color);
   width: 100%;
@@ -328,349 +313,351 @@ button:hover {
 
   .shortcut img {
     width: 320px;
+
+    #theme-switch svg:last-child {}
+
+    button:hover {
+      background-color: #510019;
+    }
   }
 
-  button:hover {
-    background-color: #510019;
+  @media(min-width: 1250px) {
+    .shortcuts {
+      grid-template-columns: 380px 380px 380px;
+    }
   }
-}
 
-@media(min-width: 1250px) {
-  .shortcuts {
-    grid-template-columns: 380px 380px 380px;
+  .sub-footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #424242;
+    text-align: center;
   }
-}
 
-.sub-footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #424242;
-  text-align: center;
-}
+  h4 {
+    font-weight: 100;
+    font-size: 22px;
+    color: white;
 
-h4 {
-  font-weight: 100;
-  font-size: 22px;
-  color: white;
+    /*Center text*/
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-  /*Center text*/
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
-}
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #1E1E1E;
+    text-align: center;
+  }
 
-.footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #1E1E1E;
-  text-align: center;
-}
+  .footer img {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.footer img {
-  margin-left: auto;
-  margin-right: auto;
-}
+  .footer p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    margin-top: 20px;
+    font-size: 16px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
 
-.footer p {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: white;
-  margin-top: 20px;
-  font-size: 16px;
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
+  }
 
-}
-
-.header {
-  margin-top: 250px;
-  text-align: center;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.header hr {
-  width: 200px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-.header h1 {
-  color: var(--text-color);
-  font-weight: 100;
-  font-size: 26px;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.header p {
-  margin-top: 50px;
-  text-align: left;
-  width: 100%;
-  margin-bottom: 50px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.section {
-  background-image: url(../img/background.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 4px solid var(--light-dark);
-  height: 350px;
-  width: 90%;
-  border-radius: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
-
-  /*Center div within section horizontally and vertically*/
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.section1 .section {
-  background-image: url(../img/background.webp);
-}
-
-.section2 .section {
-  background-image: url(../img/background.webp);
-}
-
-.section h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.section p {
-  color: white;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.sections a {
-  padding: 0;
-}
-
-.sections {
-  margin-bottom: 120px;
-}
-
-@media(min-width: 750px) {
   .header {
-    margin-top: 200px;
+    margin-top: 250px;
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header hr {
+    width: 200px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .header h1 {
+    color: var(--text-color);
+    font-weight: 100;
+    font-size: 26px;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   .header p {
-    width: 550px;
+    margin-top: 50px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .section {
-    width: 700px;
-  }
-}
-
-.secretariat img {
-  border-radius: 0px;
-}
-
-.venue {
-  text-align: center;
-  width: 100%;
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-.venue h1 {
-  color: var(--text-color);
-  font-weight: 100;
-  font-size: 26px;
-  font-family: 'Times New Roman', Times, serif;
-  margin-bottom: 20px;
-}
-
-table {
-  border-collapse: collapse;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 60px;
-  border: 1px solid #DDD;
-  font-family: 'Times New Roman', Times, serif;
-  color: var(--text-color);
-}
-
-th,
-td {
-  padding: 20px;
-  text-align: left;
-  border-bottom: 1px solid var(--light-dark);
-  font-size: 18px;
-}
-
-/*Make every other row of table a alternating color*/
-tr:nth-child(even) {
-  background-color: #84002950;
-}
-
-@media (min-width: 750px) {
-  table {
-    width: 700px;
-  }
-}
-
-.speakers h1 {
-  color: var(--text-color);
-  font-weight: 100;
-  font-size: 26px;
-  font-family: 'Times New Roman', Times, serif;
-  margin-bottom: 60px;
-}
-
-.speakers {
-  text-align: center;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.committee-buttons {
-  text-align: center;
-}
-
-.committee-buttons button {
-  width: 90%;
-  max-width: 200px;
-}
-
-@media(min-width: 750px) {
-  .committee-buttons {
-    display: flex;
-    width: 400px;
+    background-image: url(../img/background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 4px solid var(--light-dark);
+    height: 350px;
+    width: 90%;
+    border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 40px;
+
+    /*Center div within section horizontally and vertically*/
+    text-align: center;
+    display: flex;
     justify-content: center;
+    align-items: center;
+  }
+
+  .section1 .section {
+    background-image: url(../img/background.webp);
+  }
+
+  .section2 .section {
+    background-image: url(../img/background.webp);
+  }
+
+  .section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .section p {
+    color: white;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .sections a {
+    padding: 0;
+  }
+
+  .sections {
+    margin-bottom: 120px;
+  }
+
+  @media(min-width: 750px) {
+    .header {
+      margin-top: 200px;
+    }
+
+    .header p {
+      width: 550px;
+    }
+
+    .section {
+      width: 700px;
+    }
+  }
+
+  .secretariat img {
+    border-radius: 0px;
+  }
+
+  .venue {
+    text-align: center;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .venue h1 {
+    color: var(--text-color);
+    font-weight: 100;
+    font-size: 26px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    border: 1px solid #DDD;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--text-color);
+  }
+
+  th,
+  td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid var(--light-dark);
+    font-size: 18px;
+  }
+
+  /*Using the :nth-child() CSS pseudo class:*/
+  /*Make every other row of table a alternating color*/
+  tr:nth-child(even) {
+    background-color: #84002950;
+  }
+
+  @media (min-width: 750px) {
+    table {
+      width: 700px;
+    }
+  }
+
+  .speakers h1 {
+    color: var(--text-color);
+    font-weight: 100;
+    font-size: 26px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 60px;
+  }
+
+  .speakers {
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .committee-buttons {
+    text-align: center;
   }
 
   .committee-buttons button {
-    width: 200px;
+    width: 90%;
+    max-width: 200px;
   }
-}
 
-@media(min-width: 750px) {
-  .two-collumns .secretariat .shortcuts {
-    display: grid;
-    grid-template-columns: 380px 380px;
-    justify-content: center;
+  @media(min-width: 750px) {
+    .committee-buttons {
+      display: flex;
+      width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+    }
+
+    .committee-buttons button {
+      width: 200px;
+    }
   }
-}
 
-.registration {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 100px;
-}
+  @media(min-width: 750px) {
+    .two-collumns .secretariat .shortcuts {
+      display: grid;
+      grid-template-columns: 380px 380px;
+      justify-content: center;
+    }
+  }
 
-label {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 16px;
-  color: var(--text-color);
-}
-
-input {
-  margin-top: 5px;
-  margin-bottom: 20px;
-  width: 100%;
-  height: 38px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 16px;
-  color: var(--text-color);
-  padding-left: 6px;
-  padding-right: 6px;
-  background-color: var(--base-color);
-  border: 1px solid var(--light-dark);
-
-  /*Prevent unexpected sizing overflow*/
-  box-sizing: border-box;
-}
-
-select {
-  margin-top: 5px;
-  margin-bottom: 20px;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 16px;
-  color: var(--text-color);
-  height: 38px;
-  width: 50%;
-  background-color: var(--base-color);
-  border: 1px solid var(--light-dark);
-}
-
-
-.birthday select {
-  width: 30%;
-}
-
-.submit-button {
-  width: 180px;
-  height: 60px;
-  border-radius: 0;
-  background-color: #840029;
-  border: none;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.45s;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 17px;
-  width: 200px
-}
-
-.submit-button:hover {
-  background-color: #840029;
-}
-
-.submit {
-  text-align: center;
-}
-
-form hr {
-  margin-top: 45px;
-}
-
-/*Slightly modify form layout for wider screens*/
-@media(min-width: 750px) {
   .registration {
-    width: 550px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
   }
 
-  .name {
-    display: grid;
-    grid-template-columns: 270px 270px;
-    gap: 10px;
+  label {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: var(--text-color);
   }
 
-  .choice {
-    display: grid;
-    grid-template-columns: 270px 270px;
-    gap: 10px;
-  }
-
-  .choice select {
+  input {
+    margin-top: 5px;
+    margin-bottom: 20px;
     width: 100%;
+    height: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: var(--text-color);
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: var(--base-color);
+    border: 1px solid var(--light-dark);
+
+    /*Prevent unexpected sizing overflow*/
+    box-sizing: border-box;
+  }
+
+  select {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: var(--text-color);
+    height: 38px;
+    width: 50%;
+    background-color: var(--base-color);
+    border: 1px solid var(--light-dark);
+  }
+
+
+  .birthday select {
+    width: 30%;
+  }
+
+  .submit-button {
+    width: 180px;
+    height: 60px;
+    border-radius: 0;
+    background-color: #840029;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.45s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    width: 200px
   }
 
   .submit-button:hover {
-    background-color: #510019;
+    background-color: #840029;
   }
-}
+
+  .submit {
+    text-align: center;
+  }
+
+  form hr {
+    margin-top: 45px;
+  }
+
+  /*Slightly modify form layout for wider screens*/
+  @media(min-width: 750px) {
+    .registration {
+      width: 550px;
+    }
+
+    .name {
+      display: grid;
+      grid-template-columns: 270px 270px;
+      gap: 10px;
+    }
+
+    .choice {
+      display: grid;
+      grid-template-columns: 270px 270px;
+      gap: 10px;
+    }
+
+    .choice select {
+      width: 100%;
+    }
+
+    .submit-button:hover {
+      background-color: #510019;
+    }
+  }
