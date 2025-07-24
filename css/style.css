@@ -313,349 +313,350 @@ button:hover {
 
   .shortcut img {
     width: 320px;
-
-    button:hover {
-      background-color: #510019;
-    }
   }
 
-  @media(min-width: 1250px) {
-    .shortcuts {
-      grid-template-columns: 380px 380px 380px;
-    }
+  button:hover {
+    background-color: #510019;
   }
+}
 
-  .sub-footer {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: #424242;
-    text-align: center;
+@media(min-width: 1250px) {
+  .shortcuts {
+    grid-template-columns: 380px 380px 380px;
   }
+}
 
-  h4 {
-    font-weight: 100;
-    font-size: 22px;
-    color: white;
+.sub-footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #424242;
+  text-align: center;
+}
 
-    /*Center text*/
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-  }
+h4 {
+  font-weight: 100;
+  font-size: 22px;
+  color: white;
 
-  .footer {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: #1E1E1E;
-    text-align: center;
-  }
+  /*Center text*/
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
 
-  .footer img {
-    margin-left: auto;
-    margin-right: auto;
-  }
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #1E1E1E;
+  text-align: center;
+}
 
-  .footer p {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
-    margin-top: 20px;
-    font-size: 16px;
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
+.footer img {
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  }
+.footer p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  margin-top: 20px;
+  font-size: 16px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
 
+}
+
+.header {
+  margin-top: 250px;
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header hr {
+  width: 200px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.header h1 {
+  color: var(--text-color);
+  font-weight: 100;
+  font-size: 26px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.header p {
+  margin-top: 50px;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section {
+  background-image: url(../img/background.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 4px solid var(--light-dark);
+  height: 350px;
+  width: 90%;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+
+  /*Center div within section horizontally and vertically*/
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section1 .section {
+  background-image: url(../img/background.webp);
+}
+
+.section2 .section {
+  background-image: url(../img/background.webp);
+}
+
+.section h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.section p {
+  color: white;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.sections a {
+  padding: 0;
+}
+
+.sections {
+  margin-bottom: 120px;
+}
+
+@media(min-width: 750px) {
   .header {
-    margin-top: 250px;
-    text-align: center;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .header hr {
-    width: 200px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-
-  .header h1 {
-    color: var(--text-color);
-    font-weight: 100;
-    font-size: 26px;
-    font-family: 'Times New Roman', Times, serif;
+    margin-top: 200px;
   }
 
   .header p {
-    margin-top: 50px;
-    text-align: left;
-    width: 100%;
-    margin-bottom: 50px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 550px;
   }
 
   .section {
-    background-image: url(../img/background.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 4px solid var(--light-dark);
-    height: 350px;
-    width: 90%;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-
-    /*Center div within section horizontally and vertically*/
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 700px;
   }
+}
 
-  .section1 .section {
-    background-image: url(../img/background.webp);
-  }
+.secretariat img {
+  border-radius: 0px;
+}
 
-  .section2 .section {
-    background-image: url(../img/background.webp);
-  }
+.venue {
+  text-align: center;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
 
-  .section h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
+.venue h1 {
+  color: var(--text-color);
+  font-weight: 100;
+  font-size: 26px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+}
 
-  .section p {
-    color: white;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    font-weight: 400;
-  }
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  border: 1px solid #DDD;
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--text-color);
+}
 
-  .sections a {
-    padding: 0;
-  }
+th,
+td {
+  padding: 20px;
+  text-align: left;
+  border-bottom: 1px solid var(--light-dark);
+  font-size: 18px;
+}
 
-  .sections {
-    margin-bottom: 120px;
-  }
+/*Using the :nth-child() CSS pseudo class:*/
+/*Make every other row of table a alternating color*/
+tr:nth-child(even) {
+  background-color: #84002950;
+}
 
-  @media(min-width: 750px) {
-    .header {
-      margin-top: 200px;
-    }
-
-    .header p {
-      width: 550px;
-    }
-
-    .section {
-      width: 700px;
-    }
-  }
-
-  .secretariat img {
-    border-radius: 0px;
-  }
-
-  .venue {
-    text-align: center;
-    width: 100%;
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
-
-  .venue h1 {
-    color: var(--text-color);
-    font-weight: 100;
-    font-size: 26px;
-    font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 20px;
-  }
-
+@media (min-width: 750px) {
   table {
-    border-collapse: collapse;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 60px;
-    border: 1px solid #DDD;
-    font-family: 'Times New Roman', Times, serif;
-    color: var(--text-color);
+    width: 700px;
   }
+}
 
-  th,
-  td {
-    padding: 20px;
-    text-align: left;
-    border-bottom: 1px solid var(--light-dark);
-    font-size: 18px;
-  }
+.speakers h1 {
+  color: var(--text-color);
+  font-weight: 100;
+  font-size: 26px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 60px;
+}
 
-  /*Using the :nth-child() CSS pseudo class:*/
-  /*Make every other row of table a alternating color*/
-  tr:nth-child(even) {
-    background-color: #84002950;
-  }
+.speakers {
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  @media (min-width: 750px) {
-    table {
-      width: 700px;
-    }
-  }
+.committee-buttons {
+  text-align: center;
+}
 
-  .speakers h1 {
-    color: var(--text-color);
-    font-weight: 100;
-    font-size: 26px;
-    font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 60px;
-  }
+.committee-buttons button {
+  width: 90%;
+  max-width: 200px;
+}
 
-  .speakers {
-    text-align: center;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
+@media(min-width: 750px) {
   .committee-buttons {
-    text-align: center;
+    display: flex;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
   }
 
   .committee-buttons button {
-    width: 90%;
-    max-width: 200px;
+    width: 200px;
   }
+}
 
-  @media(min-width: 750px) {
-    .committee-buttons {
-      display: flex;
-      width: 400px;
-      margin-left: auto;
-      margin-right: auto;
-      justify-content: center;
-    }
-
-    .committee-buttons button {
-      width: 200px;
-    }
+@media(min-width: 750px) {
+  .two-collumns .secretariat .shortcuts {
+    display: grid;
+    grid-template-columns: 380px 380px;
+    justify-content: center;
   }
+}
 
-  @media(min-width: 750px) {
-    .two-collumns .secretariat .shortcuts {
-      display: grid;
-      grid-template-columns: 380px 380px;
-      justify-content: center;
-    }
-  }
+.registration {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
 
+label {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+input {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 38px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  color: var(--text-color);
+  padding-left: 6px;
+  padding-right: 6px;
+  background-color: var(--base-color);
+  border: 1px solid var(--light-dark);
+
+  /*Prevent unexpected sizing overflow*/
+  box-sizing: border-box;
+}
+
+select {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  color: var(--text-color);
+  height: 38px;
+  width: 50%;
+  background-color: var(--base-color);
+  border: 1px solid var(--light-dark);
+}
+
+
+.birthday select {
+  width: 30%;
+}
+
+.submit-button {
+  width: 180px;
+  height: 60px;
+  border-radius: 0;
+  background-color: #840029;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.45s;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 17px;
+  width: 200px
+}
+
+.submit-button:hover {
+  background-color: #840029;
+}
+
+.submit {
+  text-align: center;
+}
+
+form hr {
+  margin-top: 45px;
+}
+
+/*Slightly modify form layout for wider screens*/
+@media(min-width: 750px) {
   .registration {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
+    width: 550px;
   }
 
-  label {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    color: var(--text-color);
+  .name {
+    display: grid;
+    grid-template-columns: 270px 270px;
+    gap: 10px;
   }
 
-  input {
-    margin-top: 5px;
-    margin-bottom: 20px;
+  .choice {
+    display: grid;
+    grid-template-columns: 270px 270px;
+    gap: 10px;
+  }
+
+  .choice select {
     width: 100%;
-    height: 38px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    color: var(--text-color);
-    padding-left: 6px;
-    padding-right: 6px;
-    background-color: var(--base-color);
-    border: 1px solid var(--light-dark);
-
-    /*Prevent unexpected sizing overflow*/
-    box-sizing: border-box;
-  }
-
-  select {
-    margin-top: 5px;
-    margin-bottom: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    color: var(--text-color);
-    height: 38px;
-    width: 50%;
-    background-color: var(--base-color);
-    border: 1px solid var(--light-dark);
-  }
-
-
-  .birthday select {
-    width: 30%;
-  }
-
-  .submit-button {
-    width: 180px;
-    height: 60px;
-    border-radius: 0;
-    background-color: #840029;
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.45s;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 17px;
-    width: 200px
   }
 
   .submit-button:hover {
-    background-color: #840029;
+    background-color: #510019;
   }
-
-  .submit {
-    text-align: center;
-  }
-
-  form hr {
-    margin-top: 45px;
-  }
-
-  /*Slightly modify form layout for wider screens*/
-  @media(min-width: 750px) {
-    .registration {
-      width: 550px;
-    }
-
-    .name {
-      display: grid;
-      grid-template-columns: 270px 270px;
-      gap: 10px;
-    }
-
-    .choice {
-      display: grid;
-      grid-template-columns: 270px 270px;
-      gap: 10px;
-    }
-
-    .choice select {
-      width: 100%;
-    }
-
-    .submit-button:hover {
-      background-color: #510019;
-    }
-  }
+}
