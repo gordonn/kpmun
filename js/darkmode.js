@@ -1,9 +1,6 @@
 // Saves the theme setting to the browsers local storage (either "active" or "null") and stores it in a variable
 let darkmode = localStorage.getItem("darkmode");
 
-// Find button with the ID theme-switch
-const themeSwitch = document.getElementById("theme-switch");
-
 // When darkmode is enabled, add the darkmode class to the <body>
 function enableDarkmode() {
   document.body.classList.add("darkmode");
@@ -19,10 +16,10 @@ function disableDarkmode() {
 }
 
 // If dark mode was previously active, turn it on again when the page loads
-if (darkmode === "active") enableDarkmode();
+if (darkmode === "active") { enableDarkmode() };
 
 // When the button is clicked:
-themeSwitch.addEventListener("click", function () {
+function themeSwitch() {
   // Re-check the current saved theme
   darkmode = localStorage.getItem("darkmode");
   // Different syntax for if condition:
@@ -32,4 +29,4 @@ themeSwitch.addEventListener("click", function () {
   } else {
     disableDarkmode();
   }
-});
+}
