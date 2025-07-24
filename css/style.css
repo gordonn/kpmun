@@ -58,7 +58,7 @@ body {
 }
 
 /*KPMUN logo in header section*/
-.logo {
+#logo {
   width: 100px;
   height: auto;
 
