@@ -314,8 +314,6 @@ button:hover {
   .shortcut img {
     width: 320px;
 
-    #theme-switch svg:last-child {}
-
     button:hover {
       background-color: #510019;
     }
