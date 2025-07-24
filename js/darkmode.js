@@ -5,6 +5,8 @@ const icon = document.getElementById("toggle");
 // When darkmode is enabled, add the darkmode class to the <body>
 function enableDarkmode() {
   document.body.classList.add("darkmode");
+
+  // Set light mode icon when in dark mode 
   icon.src = 'img/light-mode.svg';
 
   // Save preference in local storage
@@ -14,6 +16,8 @@ function enableDarkmode() {
 // Remove darkmode class from <body>
 function disableDarkmode() {
   document.body.classList.remove("darkmode");
+
+  // Set dark mode icon when in light mode 
   icon.src = 'img/dark-mode.svg';
 
   // Clear the saved preference in local storage
