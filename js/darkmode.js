@@ -1,10 +1,14 @@
+// Early dark mode check — must run before anything else
+if (localStorage.getItem("darkmode") === "active") {
+  document.documentElement.classList.add("darkmode");
+}
+
 // Saves the theme setting to the browsers local storage (either "active" or "null") and stores it in a variable
 let darkmode = localStorage.getItem("darkmode");
 const icon = document.getElementById("toggle");
 
 // Immediately set icon and theme before anything else
 if (darkmode === "active") {
-  document.documentElement.classList.add("darkmode");
   icon.src = 'img/light-mode.svg';
 } else {
   icon.src = 'img/dark-mode.svg';
