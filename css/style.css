@@ -485,7 +485,7 @@ table {
   margin-left: auto;
   margin-right: auto;
   margin-top: 60px;
-  border: 1px solid #DDD;
+  border: 1px solid var(--light-dark);
   font-family: 'Times New Roman', Times, serif;
   color: var(--text-color);
 }
