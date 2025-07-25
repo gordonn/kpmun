@@ -2,6 +2,15 @@
 let darkmode = localStorage.getItem("darkmode");
 const icon = document.getElementById("toggle");
 
+
+// Immediately set icon and theme before anything else
+if (darkmode === "active") {
+  document.body.classList.add("darkmode");
+  icon.src = 'img/light-mode.svg';
+} else {
+  icon.src = 'img/dark-mode.svg';
+}
+
 // When darkmode is enabled, add the darkmode class to the <body>
 function enableDarkmode() {
   document.body.classList.add("darkmode");
@@ -24,16 +33,13 @@ function disableDarkmode() {
   localStorage.setItem("darkmode", null);
 }
 
-// If dark mode was previously active, turn it on again when the page loads
-if (darkmode === "active") { enableDarkmode() };
-
 // When the button is clicked:
 function themeSwitch() {
 
   // Re-check the current saved theme
   darkmode = localStorage.getItem("darkmode");
 
-  // If it's not "active", enable dark mode; otherwise, disbale it (toggle effect).
+  // If it's not "active", enable dark mode; otherwise, disable it (toggle effect).
   if (darkmode !== "active") {
     enableDarkmode();
   } else {
