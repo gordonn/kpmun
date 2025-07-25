@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kwantlen Polytechnic Model United Nations</title>
   <link rel="icon" type="image/x-icon" href="img/kmun.svg" />
+  <script>
+    // Immediately check localStorage and set class before rendering
+    if (localStorage.getItem('darkmode') === 'active') {
+      document.documentElement.classList.add('darkmode');
+    }
+  </script>
   <link href="css/style.css" rel="stylesheet" />
 </head>
 

@@ -7,7 +7,7 @@
 }
 
 /*Initialize dark mode colors*/
-.darkmode {
+html.darkmode {
   --base-color: #1E1E1E;
   --nav-color: #840029;
   --text-color: #DDDDDD;
