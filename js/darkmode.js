@@ -2,7 +2,7 @@
 let darkmode = localStorage.getItem("darkmode");
 const icon = document.getElementById("toggle");
 
-// Immediately set icon and theme before anything else
+// Set icon depending on mode
 if (darkmode === "active") {
   icon.src = 'img/light-mode.svg';
 } else {
@@ -11,7 +11,7 @@ if (darkmode === "active") {
 
 // When darkmode is enabled, add the darkmode class to the <body>
 function enableDarkmode() {
-  document.documentElement.classList.add("darkmode");
+  document.body.classList.add("darkmode");
 
   // Set light mode icon when in dark mode 
   icon.src = 'img/light-mode.svg';
@@ -22,7 +22,7 @@ function enableDarkmode() {
 
 // Remove darkmode class from <body>
 function disableDarkmode() {
-  document.documentElement.classList.remove("darkmode");
+  document.body.classList.remove("darkmode");
 
   // Set dark mode icon when in light mode 
   icon.src = 'img/dark-mode.svg';
