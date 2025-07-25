@@ -480,7 +480,9 @@ h4 {
 }
 
 table {
+  /*For cleaner table apperance*/
   border-collapse: collapse;
+
   width: 90%;
   margin-left: auto;
   margin-right: auto;
