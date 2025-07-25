@@ -32,6 +32,10 @@ function disableDarkmode() {
   localStorage.setItem("darkmode", null);
 }
 
+if (darkmode === "active") {
+  document.body.classList.add("darkmode");
+}
+
 // When the button is clicked:
 function themeSwitch() {
 
