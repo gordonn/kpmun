@@ -2,7 +2,6 @@
 let darkmode = localStorage.getItem("darkmode");
 const icon = document.getElementById("toggle");
 
-
 // Immediately set icon and theme before anything else
 if (darkmode === "active") {
   document.body.classList.add("darkmode");
