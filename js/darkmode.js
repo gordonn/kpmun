@@ -4,6 +4,7 @@ const icon = document.getElementById("toggle");
 
 // Immediately set icon and theme before anything else
 if (darkmode === "active") {
+  document.documentElement.classList.add("darkmode");
   icon.src = 'img/light-mode.svg';
 } else {
   icon.src = 'img/dark-mode.svg';
